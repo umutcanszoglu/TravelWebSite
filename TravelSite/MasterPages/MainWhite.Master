@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainWhite.master.cs" Inherits="TravelSite.MasterPages.MainWhite" %>
+
+<%@ Register Src="~/UserControls/Bootstrap.ascx" TagPrefix="uc1" TagName="Bootstrap" %>
+<%@ Register Src="~/UserControls/Scripts.ascx" TagPrefix="uc1" TagName="Scripts" %>
+<%@ Register TagPrefix="uc1" Namespace="TravelSite.UserControls" Assembly="TravelSite" %>
+<%@ Register Src="~/UserControls/BottomLight.ascx" TagPrefix="uc1" TagName="BottomLight" %>
+<%@ Register Src="~/UserControls/NavbarLight.ascx" TagPrefix="uc1" TagName="NavbarLight" %>
+
+
+
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <uc1:Bootstrap runat="server" ID="Bootstrap" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="jumbotron text-center">
+            <uc1:LogoDark runat="server" id="LogoDark" />
+            <h1 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">AB DANIŞMANLIK</h1>
+            <br />
+            <uc1:NavbarLight runat="server" id="NavbarLight" />
+            <hr class="my-4">
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <uc1:BottomLight runat="server" ID="BottomLight" />
+    </form>
+</body>
+<uc1:Scripts runat="server" ID="Scripts" />
+</html>

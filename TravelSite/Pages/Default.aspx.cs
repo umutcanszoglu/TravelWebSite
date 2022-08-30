@@ -16,6 +16,11 @@ namespace TravelSite.Pages
             var cards = cardDal.GetPictures();
             PicturesList.DataSource = cards;
             PicturesList.DataBind();
+
+            VideoDal videoDal = new VideoDal();
+            var videos = videoDal.GetVideos();
+            VideosList.DataSource = videos;
+            VideosList.DataBind();
         }
     }
 }

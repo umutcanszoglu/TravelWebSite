@@ -4,6 +4,10 @@
 <%@ Register Src="~/UserControls/Scripts.ascx" TagPrefix="uc1" TagName="Scripts" %>
 <%@ Register TagPrefix="uc1" Namespace="TravelSite.UserControls" Assembly="TravelSite" %>
 <%@ Register Src="~/UserControls/Navbar.ascx" TagPrefix="uc1" TagName="Navbar" %>
+<%@ Register Src="~/UserControls/Logo.ascx" TagPrefix="uc1" TagName="Logo" %>
+<%@ Register Src="~/UserControls/BottomLight.ascx" TagPrefix="uc1" TagName="BottomLight" %>
+
+
 
 
 
@@ -20,18 +24,17 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div class="jumbotron jumbotron-fluid text-center" style="background-color: #343a40!important;">
-            <uc1:Logo runat="server" id="Logo" />
-            <h1 style="color: white; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">AB DANIŞMANLIK</h1>
+        <div class="jumbotron jumbotron-fluid text-center" style="background-color: #e9ecef!important;">
+            <uc1:Logo runat="server" ID="Logo" />
+            <h1 style="color: currentColor; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">AB DANIŞMANLIK</h1>
             <br/>
-            <uc1:Navbar runat="server" ID="Navbar" />
         </div> 
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>
         
-        <uc1:BottomDark runat="server" ID="BottomDark" />
+        <uc1:BottomLight runat="server" ID="BottomLight" />
     </form>
 </body>
 <uc1:Scripts runat="server" ID="Scripts" />

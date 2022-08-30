@@ -10,7 +10,7 @@
 
 namespace TravelSite.UserControls
 {
-    public partial class LogoDark
+    public partial class UserCard
     {
     }
 }

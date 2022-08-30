@@ -5,6 +5,8 @@
 <%@ Register TagPrefix="uc1" Namespace="TravelSite.UserControls" Assembly="TravelSite" %>
 <%@ Register Src="~/UserControls/BottomLight.ascx" TagPrefix="uc1" TagName="BottomLight" %>
 <%@ Register Src="~/UserControls/NavbarLight.ascx" TagPrefix="uc1" TagName="NavbarLight" %>
+<%@ Register Src="~/UserControls/Logo.ascx" TagPrefix="uc1" TagName="Logo" %>
+
 
 
 
@@ -23,11 +25,10 @@
 <body>
     <form id="form1" runat="server">
         <div class="jumbotron text-center">
-            <uc1:LogoDark runat="server" id="LogoDark" />
+            <uc1:Logo runat="server" ID="Logo" />
             <h1 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">AB DANIŞMANLIK</h1>
             <br />
             <uc1:NavbarLight runat="server" id="NavbarLight" />
-            <hr class="my-4">
         </div>
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">

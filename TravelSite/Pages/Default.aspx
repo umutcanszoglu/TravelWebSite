@@ -5,6 +5,16 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
+    <asp:ListView ID="VideosList" runat="server">
+        <ItemTemplate>
+            <div class="embed-responsive embed-responsive-16by9 rounded text-center" style="margin: auto;  width: 1000px; height: 550px;">
+                <iframe class="embed-responsive-item" src="<%#Eval("Url") %>" allowfullscreen=0></iframe>
+            </div>
+        </ItemTemplate>
+    </asp:ListView>
+    <br />
+    <br />
     <div class="row">
         <asp:ListView ID="PicturesList" runat="server">
             <ItemTemplate>

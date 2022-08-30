@@ -42,13 +42,13 @@ namespace TravelSite.MasterPages
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// LogoDark control.
+        /// Logo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::TravelSite.UserControls.LogoDark LogoDark;
+        protected global::TravelSite.UserControls.Logo Logo;
 
         /// <summary>
         /// NavbarLight control.

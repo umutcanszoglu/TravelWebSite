@@ -1,4 +1,5 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPages/MainWhite.Master" AutoEventWireup="true" CodeBehind="Admin.aspx.cs" Inherits="TravelSite.Pages.Admin" %>
+﻿
+<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPages/MainWhite.Master" AutoEventWireup="true" CodeBehind="Admin.aspx.cs" Inherits="TravelSite.Pages.Admin" %>
 
 <%@ Register Src="~/UserControls/AdminCards.ascx" TagPrefix="uc1" TagName="AdminCards" %>
 <%@ Register Src="~/UserControls/AppForm.ascx" TagPrefix="uc1" TagName="AppForm" %>
@@ -8,6 +9,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
     <h1 style="margin-left: 50px; margin-top: 5px;">Resim Yükleme</h1>
     <hr class="my-4" style="margin-left: 50px; margin-right: 50px;">
     <div class="form-group" style="margin-left: 50px; margin-right: 50px; margin-top: 5px;">
@@ -23,8 +25,9 @@
         <asp:Button ID="btnAdd" class="btn btn-outline-warning"  runat="server" Text="Yükle" OnClick="btnAdd_OnClick" />    
 
     </div>
-
-    <br />
+    <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+        <ContentTemplate>
+            <br />
 
     <h1 style="margin-left: 50px; margin-top: 5px;">Resim Silme</h1>
     <hr class="my-4" style="margin-left: 50px; margin-right: 50px;">
@@ -76,6 +79,13 @@
 
     <asp:Button ID="btnFormShow" class="btn btn-outline-warning" style="margin-left: 1px;" runat="server" Text="Göster" OnClick="btnFormShow_Click" />
 
+        </ContentTemplate>
+        <Triggers>
+            
+        </Triggers>
+    </asp:UpdatePanel>
+
+    
     
 
 </asp:Content>

@@ -39,6 +39,11 @@ namespace TravelSite.Pages
         {
             var pic = adminDal.GetPictureById(Int32.Parse(txtDel.Text));
             adminDal.ImageDelete(pic);
+
+            CardDal cardDal = new CardDal();
+            var cards = cardDal.GetPictures();
+            ImageList.DataSource = cards;
+            ImageList.DataBind();
         }
 
         protected void btnShow_OnClick(object sender, EventArgs e)
@@ -74,6 +79,10 @@ namespace TravelSite.Pages
             ApplicationFormDal formDal = new ApplicationFormDal();
             var form = formDal.getbyEmail(txtFormDel.Text);
             formDal.Delete(form);
+
+            var users = formDal.getForms();
+            ListView1.DataSource = users;
+            ListView1.DataBind();
         }
     }
 }

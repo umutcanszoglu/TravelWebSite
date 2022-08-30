@@ -2,11 +2,18 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="row">
-        <div class="col-md-4 mx-auto text-center">
-            <h1>AB Danışmanlık</h1>
-            <hr class="my-4">
-            <p class="font-weight-light">Enter the email address associated with your account and we'll send you a link to reset your password.</p>
-        </div>
-    </div>
+    <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+    <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+        <ContentTemplate>
+            <div class="row">
+                <div class="col-md-4 mx-auto text-center">
+                    <h1>AB Danışmanlık</h1>
+                    <hr class="my-4">
+                    <p class="font-weight-light">Enter the email address associated with your account and we'll send you a link to reset your password.</p>
+                </div>
+            </div>
+        </ContentTemplate>
+        <Triggers></Triggers>
+    </asp:UpdatePanel>
+    
 </asp:Content>

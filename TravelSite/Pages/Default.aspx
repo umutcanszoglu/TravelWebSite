@@ -6,22 +6,29 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
-    <asp:ListView ID="VideosList" runat="server">
-        <ItemTemplate>
-            <div class="embed-responsive embed-responsive-16by9 rounded text-center" style="margin: auto;  width: 1000px; height: 550px;">
-                <iframe class="embed-responsive-item" src="<%#Eval("Url") %>" allowfullscreen=0></iframe>
+    <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+    <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+        <ContentTemplate>
+            <asp:ListView ID="VideosList" runat="server">
+                <ItemTemplate>
+                    <div class="embed-responsive embed-responsive-16by9 rounded text-center" style="margin: auto;  width: 1000px; height: 550px;">
+                        <iframe class="embed-responsive-item" src="<%#Eval("Url") %>" allowfullscreen=0></iframe>
+                    </div>
+                </ItemTemplate>
+            </asp:ListView>
+            <br />
+            <br />
+            <div class="row">
+                <asp:ListView ID="PicturesList" runat="server">
+                    <ItemTemplate>
+                        <uc1:Card runat="server" ID="Card" />
+                    </ItemTemplate>
+                </asp:ListView>
             </div>
-        </ItemTemplate>
-    </asp:ListView>
-    <br />
-    <br />
-    <div class="row">
-        <asp:ListView ID="PicturesList" runat="server">
-            <ItemTemplate>
-                <uc1:Card runat="server" ID="Card" />
-            </ItemTemplate>
-        </asp:ListView>
-    </div>
+        </ContentTemplate>
+        <Triggers></Triggers>
+    </asp:UpdatePanel>
+
+ 
    
 </asp:Content>

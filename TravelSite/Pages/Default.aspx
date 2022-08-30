@@ -1,4 +1,5 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPages/MainWhite.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="TravelSite.Pages.Default" %>
+﻿
+<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPages/MainWhite.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="TravelSite.Pages.Default" %>
 
 <%@ Register Src="~/UserControls/Card.ascx" TagPrefix="uc1" TagName="Card" %>
 

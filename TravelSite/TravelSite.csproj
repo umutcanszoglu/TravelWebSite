@@ -196,9 +196,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Pages\Admin.aspx" />
+    <Content Include="Pages\AppForm.aspx" />
     <Content Include="Pages\Default.aspx" />
+    <Content Include="Pages\Info.aspx" />
     <Content Include="Pages\Login.aspx" />
     <Content Include="UserControls\AdminCards.ascx" />
+    <Content Include="UserControls\AppForm.ascx" />
     <Content Include="UserControls\Bootstrap.ascx" />
     <Content Include="UserControls\BottomDark.ascx" />
     <Content Include="UserControls\BottomLight.ascx" />
@@ -232,12 +235,26 @@
     <Compile Include="Pages\Admin.aspx.designer.cs">
       <DependentUpon>Admin.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Pages\AppForm.aspx.cs">
+      <DependentUpon>AppForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AppForm.aspx.designer.cs">
+      <DependentUpon>AppForm.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Pages\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Info.aspx.cs">
+      <DependentUpon>Info.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Info.aspx.designer.cs">
+      <DependentUpon>Info.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -253,6 +270,13 @@
     </Compile>
     <Compile Include="UserControls\AdminCards.ascx.designer.cs">
       <DependentUpon>AdminCards.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\AppForm.ascx.cs">
+      <DependentUpon>AppForm.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\AppForm.ascx.designer.cs">
+      <DependentUpon>AppForm.ascx</DependentUpon>
     </Compile>
     <Compile Include="UserControls\Bootstrap.ascx.cs">
       <DependentUpon>Bootstrap.ascx</DependentUpon>

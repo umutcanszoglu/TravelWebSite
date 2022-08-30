@@ -13,5 +13,6 @@ namespace DatabaseAccessLayer
         public DbSet<Admin> Admins { get; set; }
         public DbSet<Picture> Pictures { get; set; }
         public DbSet<Video> Videos { get; set; }
+        public DbSet<ApplicationForm> ApplicationForms { get; set; }
     }
 }

@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Operations\AdminDal.cs" />
+    <Compile Include="Operations\ApplicationFormDal.cs" />
     <Compile Include="Operations\CardDal.cs" />
     <Compile Include="Operations\VideoDal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

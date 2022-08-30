@@ -59,5 +59,14 @@ namespace TravelSite.Pages
             currentVideo.Url = videourl_1 + txtUrl.Text + videourl_2;
             videoDal.Update(currentVideo);
         }
+
+        protected void btnFormShow_Click(object sender, EventArgs e)
+        {
+            ApplicationFormDal formDal = new ApplicationFormDal();
+
+            var users = formDal.getForms();
+            ListView1.DataSource = users;
+            ListView1.DataBind();
+        }
     }
 }

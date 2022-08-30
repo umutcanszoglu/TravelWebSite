@@ -114,6 +114,24 @@ namespace TravelSite.Pages
         protected global::System.Web.UI.WebControls.ListView ListView1;
 
         /// <summary>
+        /// txtFormDel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtFormDel;
+
+        /// <summary>
+        /// btnFormDel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnFormDel;
+
+        /// <summary>
         /// btnFormShow control.
         /// </summary>
         /// <remarks>

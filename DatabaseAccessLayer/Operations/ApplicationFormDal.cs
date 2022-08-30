@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,11 +18,11 @@ namespace DatabaseAccessLayer.Operations
             }
         }
 
-        public ApplicationForm getbyEmail(ApplicationForm user)
+        public ApplicationForm getbyEmail(string key)
         {
             using (TravelDBContext ctx = new TravelDBContext())
             {
-                return ctx.ApplicationForms.Where(p => p.Email == user.Email).FirstOrDefault();
+                return ctx.ApplicationForms.Where(p => p.Email == key).FirstOrDefault();
             }
         }
 
@@ -31,6 +32,17 @@ namespace DatabaseAccessLayer.Operations
             {
                 ctx.ApplicationForms.Add(form);
                 ctx.SaveChanges();
+            }
+        }
+
+        public void Delete(ApplicationForm form)
+        {
+            using (TravelDBContext ctx = new TravelDBContext())
+            {
+                var entity = ctx.Entry(form);
+                entity.State = EntityState.Deleted;
+                ctx.SaveChanges();
+
             }
         }
     }

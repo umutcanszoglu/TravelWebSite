@@ -69,7 +69,12 @@
         </asp:ListView>
     </div>
     <br />
-    <asp:Button ID="btnFormShow" class="btn btn-outline-warning" style="margin-left: 50px;" runat="server" Text="Göster" OnClick="btnFormShow_Click" />
+    <label for="exampleInputPassword1" style="margin-left: 50px;">Geçerli Email'i Giriniz:</label>
+    <asp:TextBox ID="txtFormDel" class="form-control shadow-sm p-3 mb-5 bg-white rounded" style="margin-left: 50px;" runat="server"></asp:TextBox>
+    <br />
+    <asp:Button ID="btnFormDel" class="btn btn-outline-warning" runat="server" Text="Sil" style="margin-left: 50px;" OnClick="btnFormDel_Click" />
+
+    <asp:Button ID="btnFormShow" class="btn btn-outline-warning" style="margin-left: 1px;" runat="server" Text="Göster" OnClick="btnFormShow_Click" />
 
     
 

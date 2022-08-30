@@ -68,5 +68,12 @@ namespace TravelSite.Pages
             ListView1.DataSource = users;
             ListView1.DataBind();
         }
+
+        protected void btnFormDel_Click(object sender, EventArgs e)
+        {
+            ApplicationFormDal formDal = new ApplicationFormDal();
+            var form = formDal.getbyEmail(txtFormDel.Text);
+            formDal.Delete(form);
+        }
     }
 }

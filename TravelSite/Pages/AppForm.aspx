@@ -3,6 +3,8 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <form>
+        <h1 style="margin-left: 100px; margin-top: 5px;">Başvuru Yap</h1>
+        <hr class="my-4" style="margin-left: 100px; margin-right: 100px;">
         <div class="form-group" style="margin-left: 100px; margin-right: 100px;">
             <label for="exampleFormControlInput1">Ad</label>
             <asp:TextBox ID="txtName" class="form-control" runat="server"></asp:TextBox>

@@ -198,6 +198,7 @@
     <Content Include="Pages\Admin.aspx" />
     <Content Include="Pages\AppForm.aspx" />
     <Content Include="Pages\Default.aspx" />
+    <Content Include="Pages\DiceGame.aspx" />
     <Content Include="Pages\Info.aspx" />
     <Content Include="Pages\Login.aspx" />
     <Content Include="UserControls\AdminCards.ascx" />
@@ -206,6 +207,13 @@
     <Content Include="UserControls\BottomDark.ascx" />
     <Content Include="UserControls\BottomLight.ascx" />
     <Content Include="UserControls\Card.ascx" />
+    <Content Include="UserControls\Dice.ascx" />
+    <Content Include="UserControls\DiceFive.ascx" />
+    <Content Include="UserControls\DiceFour.ascx" />
+    <Content Include="UserControls\DiceOne.ascx" />
+    <Content Include="UserControls\DiceSix.ascx" />
+    <Content Include="UserControls\DiceThree.ascx" />
+    <Content Include="UserControls\DiceTwo.ascx" />
     <Content Include="UserControls\Logo.ascx" />
     <Content Include="UserControls\Navbar.ascx" />
     <Content Include="UserControls\NavbarLight.ascx" />
@@ -248,6 +256,13 @@
     </Compile>
     <Compile Include="Pages\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\DiceGame.aspx.cs">
+      <DependentUpon>DiceGame.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\DiceGame.aspx.designer.cs">
+      <DependentUpon>DiceGame.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Info.aspx.cs">
       <DependentUpon>Info.aspx</DependentUpon>
@@ -305,6 +320,55 @@
     </Compile>
     <Compile Include="UserControls\Card.ascx.designer.cs">
       <DependentUpon>Card.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Dice.ascx.cs">
+      <DependentUpon>Dice.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Dice.ascx.designer.cs">
+      <DependentUpon>Dice.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\DiceFive.ascx.cs">
+      <DependentUpon>DiceFive.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\DiceFive.ascx.designer.cs">
+      <DependentUpon>DiceFive.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\DiceFour.ascx.cs">
+      <DependentUpon>DiceFour.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\DiceFour.ascx.designer.cs">
+      <DependentUpon>DiceFour.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\DiceOne.ascx.cs">
+      <DependentUpon>DiceOne.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\DiceOne.ascx.designer.cs">
+      <DependentUpon>DiceOne.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\DiceSix.ascx.cs">
+      <DependentUpon>DiceSix.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\DiceSix.ascx.designer.cs">
+      <DependentUpon>DiceSix.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\DiceThree.ascx.cs">
+      <DependentUpon>DiceThree.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\DiceThree.ascx.designer.cs">
+      <DependentUpon>DiceThree.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\DiceTwo.ascx.cs">
+      <DependentUpon>DiceTwo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\DiceTwo.ascx.designer.cs">
+      <DependentUpon>DiceTwo.ascx</DependentUpon>
     </Compile>
     <Compile Include="UserControls\Logo.ascx.cs">
       <DependentUpon>Logo.ascx</DependentUpon>

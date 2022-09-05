@@ -55,6 +55,7 @@
     <Compile Include="Operations\ApplicationFormDal.cs" />
     <Compile Include="Operations\CardDal.cs" />
     <Compile Include="Operations\DiceDal.cs" />
+    <Compile Include="Operations\LogDal.cs" />
     <Compile Include="Operations\VideoDal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Context\TravelDBContext.cs" />

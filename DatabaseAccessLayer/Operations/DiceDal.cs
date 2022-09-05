@@ -19,6 +19,22 @@ namespace DatabaseAccessLayer.Operations
             }
         }
 
+        public List<int> GetFaces()
+        {
+            using (TravelDBContext ctx = new TravelDBContext())
+            {
+                var diceList = GetDices();
+                List<int> faces = new List<int>(diceList.Count);
+
+                for (int i = 0; i < diceList.Count; i++)
+                {
+                    faces.Add(diceList[i].Face);
+                }
+
+                return faces;
+            }
+        }
+
         public void Roll(List<Dice> diceList)
         {
             using (TravelDBContext ctx = new TravelDBContext())
@@ -39,6 +55,7 @@ namespace DatabaseAccessLayer.Operations
                     var entity = ctx.Entry(diceList[i]);
                     entity.State = EntityState.Modified;
                     ctx.SaveChanges();
+                    
                 }
             }
         }
@@ -57,18 +74,23 @@ namespace DatabaseAccessLayer.Operations
             }
         }
 
-        public void Upgrade(List<Dice> diceList)
+        public int Salary(List<Dice> diceList)
         {
             using (TravelDBContext ctx = new TravelDBContext())
             {
-                for (int i = 0; i < diceList.Count; i++)
-                {
-                    diceList[i].Level += 1;
+                return 1;
+            }
+        }
 
-                    var entity = ctx.Entry(diceList[i]);
-                    entity.State = EntityState.Modified;
-                    ctx.SaveChanges();
-                }
+        public void Upgrade(Dice dice)
+        {
+            using (TravelDBContext ctx = new TravelDBContext())
+            {
+                dice.Level += 1;
+
+                var entity = ctx.Entry(dice);
+                entity.State = EntityState.Modified;
+                ctx.SaveChanges();
             }
         }
     }

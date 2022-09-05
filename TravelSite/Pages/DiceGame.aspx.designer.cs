@@ -51,15 +51,6 @@ namespace TravelSite.Pages
         protected global::System.Web.UI.WebControls.Button btnRoll;
 
         /// <summary>
-        /// btnAdd control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAdd;
-
-        /// <summary>
         /// btnUp1 control.
         /// </summary>
         /// <remarks>
@@ -103,14 +94,5 @@ namespace TravelSite.Pages
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnUp5;
-
-        /// <summary>
-        /// LblTotal control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblTotal;
     }
 }

@@ -15,5 +15,6 @@ namespace DatabaseAccessLayer
         public DbSet<Video> Videos { get; set; }
         public DbSet<ApplicationForm> ApplicationForms { get; set; }
         public DbSet<Dice> Dices { get; set; }
+        public DbSet<Log> Logs { get; set; }
     }
 }
